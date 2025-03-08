@@ -10,8 +10,7 @@ body {
 main {
   position: absolute;
   top: 50px;
-  left: 450px;
-
+  left: 50px;
   border: solid 5px black;
 }
 main::before {
@@ -28,24 +27,46 @@ main::before {
   line-height: 25px;
   letter-spacing: 2px;
 }
-section {
+.product__card {
   padding: 10px 20px;
+  width: 1000px;
+  height: 300px;
 }
 .product--name {
   text-align: center;
+}
+.product__card--info--left {
+  float: left;
 }
 .product-img {
   width: 200px;
   height: 200px;
 }
+.division {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 300px;
+}
+.product__card--info--middle {
+  float: left;
+}
+.product--price--shipping {
+  display: block;
+}
 .product--price {
   font-weight: bold;
   font-size: 28px;
+  width: fit-content;
+  float: left;
 }
 .product--shipping--uppercase {
   color: gray;
   text-transform: uppercase;
   font-weight: bold;
+  width: 300px;
+  /* float: right; */
+}
+.product--describe--pallete {
 }
 .product--moreinfo {
   color: black;
@@ -79,10 +100,16 @@ section {
 .brown {
   background-color: brown;
 }
+.product__card--info--right {
+  float: right;
+}
 .product__list--heading {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 10px;
+}
+.product__detail--list {
+  line-height: 1.7;
 }
 .product__detail--list li {
   margin-left: 10px;
@@ -95,4 +122,7 @@ section {
   margin-top: 10px;
   text-transform: capitalize;
   cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
