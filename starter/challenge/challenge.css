@@ -6,6 +6,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 main {
   position: absolute;
@@ -29,11 +30,12 @@ main::before {
 }
 .product__card {
   padding: 10px 20px;
-  width: 1000px;
+  width: 850px;
   height: 300px;
 }
 .product--name {
   text-align: center;
+  text-transform: capitalize;
 }
 .product__card--info--left {
   float: left;
@@ -43,15 +45,17 @@ main::before {
   height: 200px;
 }
 .division {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 20px;
-  width: 300px;
+  width: 250px;
 }
 .product__card--info--middle {
   float: left;
 }
-.product--price--shipping {
+.product--price--and--shipping {
   display: block;
+  height: 32px;
+  margin-bottom: 20px;
 }
 .product--price {
   font-weight: bold;
@@ -64,17 +68,26 @@ main::before {
   text-transform: uppercase;
   font-weight: bold;
   width: 300px;
-  /* float: right; */
+  width: fit-content;
+  float: right;
+  line-height: 32px;
+  font-size: 13px;
 }
-.product--describe--pallete {
+.product--describe--and--pallete {
+  float: left;
+}
+.product--describe {
+  text-transform: capitalize;
 }
 .product--moreinfo {
   color: black;
   text-transform: uppercase;
+  margin-top: 20px;
+  display: inline-block;
 }
 .pallete__color--inline {
-  margin-top: 10px;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 .color {
   width: 25px;
