@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+}
+h2 {
+  position: relative;
+  width: fit-content;
+  font-size: 32px;
+}
+
+h2::after {
+  content: "TOP";
+  width: 30px;
+  height: 20px;
+  background-color: rgb(255, 217, 0);
+  font-size: 10px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 20px;
+  padding: 4px 1px;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: -60px;
+}
+nav {
+  text-align: center;
+}
+nav a:link {
+  color: rgb(15, 158, 158);
+  text-decoration: none;
+  margin-right: 10px;
+}
+nav a:hover {
+  color: white;
+  background-color: rgb(15, 158, 158);
+  font-size: larger;
+}
