@@ -3,13 +3,78 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*UNIVERSAL STYLE*/
+img {
+  width: 200px;
+  height: 200px;
+}
+ul {
+  list-style-type: none;
+}
+/**/
 body {
+  font-family: sans-serif;
   width: 100vw;
   height: 2000px;
   display: grid;
   grid-template-rows: 2fr 1fr 1.5fr 2fr 50px;
+  justify-content: center;
+  align-content: center;
+  padding-right: 200px;
+  padding-left: 200px;
 }
-img {
-  width: 200px;
-  height: 200px;
+/* 1.HEADER:HERO SECTION */
+.header--hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 2rem;
+}
+.header--hero--texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* width: 80%; */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.header--hero img {
+  width: 400px;
+  height: 400px;
+}
+/* 2.MAIN SECTION */
+/* 2.1. MAIN: PRODUCTS PROPERTY  */
+.main--section--one {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.sub--main--section--one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.sub--main--section--one h4 {
+  margin-bottom: 1rem;
+}
+.sub--main--section--one p {
+  padding-right: 2rem;
+}
+/* 2.2. MAIN: CUSTOMER REVIEW */
+.main--section--two {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.section--two--texts blockquote {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+.main--section--two img {
+  width: 300px;
+  height: 250px;
 }
