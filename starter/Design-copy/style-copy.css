@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 2000px;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1.5fr 2fr 50px;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
