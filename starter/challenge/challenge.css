@@ -8,12 +8,14 @@ body {
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
-main {
+/* main {
+  width: 50vw;
+  height: 50vh;
   position: absolute;
   top: 50px;
   left: 50px;
   border: solid 5px black;
-}
+} */
 main::before {
   content: "SALE";
   width: 70px;
@@ -21,8 +23,8 @@ main::before {
   color: white;
   background-color: red;
   position: absolute;
-  top: -20px;
-  left: -30px;
+  top: +20px;
+  left: +20px;
   padding: 5px 2px;
   text-align: center;
   line-height: 25px;
@@ -106,7 +108,7 @@ main::before {
 .product__detail--list li {
   margin-left: 10px;
 }
-.button__addto--strech {
+/* .button__addto--strech {
   color: white;
   background-color: black;
   text-align: center;
@@ -117,7 +119,7 @@ main::before {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
+} */
 /*FLOAT*/
 /*
 .division {
@@ -149,7 +151,7 @@ main::before {
 }
   */
 /*FLEX*/
-.section__card {
+/* .section__card {
   display: flex;
   gap: 30px;
   margin-top: 30px;
@@ -162,4 +164,26 @@ main {
 .product--price--and--shipping {
   display: flex;
   justify-content: space-between;
+} */
+/*GRID LAYOUT*/
+main {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  border: 2px solid black;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.product--name {
+  grid-column: 1/-1;
+}
+.product--price--and--shipping {
+  display: flex;
+  gap: 30px;
+}
+.add--cart {
+  background-color: black;
+  color: white;
+  text-align: center;
+  grid-column: 1/-1;
 }
