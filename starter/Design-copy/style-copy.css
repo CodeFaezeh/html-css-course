@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 /*UNIVERSAL STYLE*/
-img {
-  width: 200px;
-  height: 200px;
-}
 ul {
   list-style-type: none;
 }
