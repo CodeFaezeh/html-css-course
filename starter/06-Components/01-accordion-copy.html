@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion copy</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .item {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        row-gap: 24px;
+        column-gap: 16px;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+        padding: 20px 30px;
+        /* border-top: solid #087f5b 5px; */
+      }
+      .number,
+      .text {
+        color: #868e96;
+        font-weight: 500;
+        font-size: 24px;
+      }
+      .icon svg {
+        fill: #087f5b;
+        width: 20px;
+        height: 20px;
+      }
+      .hidden-box {
+        grid-column: 2;
+        line-height: 1.6;
+        display: none;
+      }
+      .hidden-box p {
+        margin-bottom: 16px;
+      }
+      .hidden-box ul {
+        color: #868e96;
+        margin-left: 18px;
+      }
+      /* OPEN STYLE */
+      .open {
+        border-top: solid 5px #087f5b;
+      }
+      .open .number,
+      .open .text {
+        color: #087f5b;
+      }
+      .open .hidden-box {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="accordion">
+      <div class="item">
+        <p class="number">01</p>
+        <p class="text">Where are these chairs assenmbled?</p>
+        <i class="icon">
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 330 330"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                id="XMLID_225_"
+                d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+              ></path>
+            </g>
+          </svg>
+        </i>
+        <div class="hidden-box">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            consequatur quia fuga animi perspiciatis est nesciunt dicta. Aliquam
+            magnam at, iusto officia nulla nam commodi voluptate omnis
+            temporibus deleniti id.
+          </p>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+            </li>
+            <li>Tempora, et atque officia at consequatur laborum!</li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item open">
+        <p class="number">02</p>
+        <p class="text">How long do I have to ruturn my chair?</p>
+        <i class="icon">
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 330 330"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                id="XMLID_225_"
+                d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+              ></path>
+            </g>
+          </svg>
+        </i>
+        <div class="hidden-box">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            consequatur quia fuga animi perspiciatis est nesciunt dicta. Aliquam
+            magnam at, iusto officia nulla nam commodi voluptate omnis
+            temporibus deleniti id.
+          </p>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+            </li>
+            <li>Tempora, et atque officia at consequatur laborum!</li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="number">03</p>
+        <p class="text">Do you ship to countries outside the EU?</p>
+        <i class="icon">
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 330 330"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                id="XMLID_225_"
+                d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+              ></path>
+            </g>
+          </svg>
+        </i>
+        <div class="hidden-box">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            consequatur quia fuga animi perspiciatis est nesciunt dicta. Aliquam
+            magnam at, iusto officia nulla nam commodi voluptate omnis
+            temporibus deleniti id.
+          </p>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+            </li>
+            <li>Tempora, et atque officia at consequatur laborum!</li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

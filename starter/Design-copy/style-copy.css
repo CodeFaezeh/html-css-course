@@ -10,8 +10,8 @@ ul {
 /**/
 body {
   font-family: sans-serif;
-  width: 100vw;
-  height: 1700px;
+  /* width: 100vw;
+  height: 1700px; */
   display: grid;
   grid-template-rows: 2fr 0.5fr 1.5fr 1.5fr 150px;
   justify-content: center;

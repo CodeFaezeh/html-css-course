@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Component</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        line-height: 1;
+      }
+      .carousel {
+        background-color: #087f5b;
+        padding: 32px 48px 32px 86px;
+        width: 800px;
+        margin: 100px auto;
+        border-radius: 8px;
+        color: #fff;
+        display: flex;
+        /* align-items: center; */
+        gap: 86px;
+        position: relative;
+      }
+      img {
+        height: 220px;
+        border-radius: 8px;
+        transform: scale(1.5);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        align-self: center;
+      }
+      .testemonial {
+      }
+      .testemonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #e6fcfc;
+      }
+      .testemonial-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #c3fae8;
+      }
+      .testemonial-job {
+        font-size: 12px;
+        color: #c3fae8;
+      }
+      /* CONTROLS */
+      .btn {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+      .btn-icon {
+        stroke: #087f5b;
+        width: 24px;
+        height: 24px;
+      }
+      .btn--left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn--right {
+        right: 0;
+        top: 50%;
+        transform: translate(+50%, -50%);
+      }
+      .dots {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 32px);
+        display: flex;
+        gap: 12px;
+      }
+      .dot {
+        background-color: #fff;
+        height: 12px;
+        width: 12px;
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .dot--fill {
+        background-color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="./maria.jpg" alt="Maria picture" />
+      <blockquote class="testemonial">
+        <p class="testemonial-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eaque
+          officiis ratione consequatur cupiditate reiciendis, expedita corporis
+          tenetur velit praesentium quos nisi. Nostrum, expedita. Provident
+          placeat quod ipsa facilis maiores.
+        </p>
+        <p class="testemonial-author">Marial de Almeida</p>
+        <p class="testemonial-job">Product Manager at EDP comercial</p>
+      </blockquote>
+      <button class="btn btn--left">
+        <svg
+          class="btn-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+          />
+        </svg>
+      </button>
+      <button class="btn btn--right">
+        <svg
+          class="btn-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot--fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
