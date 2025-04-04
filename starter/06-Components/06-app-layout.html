@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 24px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      nav,
+      menu,
+      section,
+      main,
+      aside {
+        padding-top: 24px;
+      }
+      nav {
+        grid-row: 1/-1;
+        background-color: #34343499;
+        color: white;
+      }
+      menu {
+        grid-column: 2/-1;
+        background-color: purple;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        font-size: 16px;
+      }
+      menu ul {
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      ul li a:link,
+      ul li a:visited {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(76, 1, 76);
+        padding: 8px 12px;
+        font-weight: bold;
+      }
+      a {
+        cursor: pointer;
+      }
+      menu a:link,
+      menu a:visited {
+        color: #fff;
+        text-decoration: none;
+        background-color: red;
+        padding: 5px 10px;
+      }
+      section {
+        grid-column: 2;
+        background-color: lightgray;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        overflow: scroll;
+      }
+      .email {
+        background-color: rgb(181, 181, 181);
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      aside {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <ul>
+        <li><a href="">New</a></li>
+        <li><a href="">Reply</a></li>
+        <li><a href="">Forward</a></li>
+        <li><a href="">Mark unread</a></li>
+      </ul>
+      <a href="#">Trash</a>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
+    <main>Email view</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>
